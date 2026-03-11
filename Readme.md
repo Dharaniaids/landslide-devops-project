@@ -19,4 +19,5 @@ This project demonstrates a machine learning model integrated with DevOps practi
 - train.py
 - requirements.txt
 - landslide_dataset.csv
+
 - landslide_model.pkl
