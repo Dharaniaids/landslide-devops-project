@@ -21,3 +21,5 @@ This project demonstrates a machine learning model integrated with DevOps practi
 - landslide_dataset.csv
 
 - landslide_model.pkl
+
+DevOps CI/CD pipeline project
