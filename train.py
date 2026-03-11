@@ -15,8 +15,9 @@ categorical_cols = df.select_dtypes(include='object').columns
 df = pd.get_dummies(df, columns=categorical_cols)
 
 # Step 4: Split features and target
-X = df.drop(columns=['Earthquake_Activity'])
-y = df['Earthquake_Activity']
+# Split features and labels
+X = df.iloc[:, :-1]
+y = df.iloc[:, -1]
 
 # Step 5: Train-test split
 X_train, X_test, y_train, y_test = train_test_split(
@@ -38,3 +39,4 @@ print("R2:", r2_score(y_test, predictions))
 joblib.dump(model, "landslide_model.pkl")
 
 print("Model saved successfully")
+
